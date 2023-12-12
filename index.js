@@ -81,7 +81,7 @@ app.put("/:id", function (req, res) {
 const id=req.params.id
 arr=arr.filter(x=>x.id!== +id)
 const newObj={
-    id:id,
+    id:+id,
     description:req.body.description,
     name:req.body.name
 }
